@@ -7,13 +7,13 @@ class Task extends Model
     // プロパティ
     protected $table = 'tasks';
 
+    // 新規作成(create)に使用する
     // タスク作成のメソッド
-    public function create()
+    public function create($data)
     {
         // 実行するSQL
         $stmt = $this->db_manager->dbh->prepare('INSERT INTO ' . $this->table . ' (title, contents, created) VALUES (?, ?, ?)');
-
-
+        $stmt->execute($data);
     }
 
     // タスクを更新するメソッド
