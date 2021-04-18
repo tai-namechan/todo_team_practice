@@ -15,7 +15,7 @@ $currentTime = date("Y/m/d H:i:s");
 $task = new Task();
 $task->create([$title, $contents, $currentTime]);
 
-// var_dump($task);
+
 // create.php→index.phpへリダイレクト
 header('location:index.php');
 exit;
