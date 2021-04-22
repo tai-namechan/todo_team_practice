@@ -39,11 +39,10 @@ class Model
     }
 
 
-    public function delete()
+    public function delete($id)
     {
         // 実行するSQL
         $stmt = $this->db_manager->dbh->prepare('DELETE FROM ' . $this->table . ' WHERE id = ?');
-
-        
+        return $stmt->execute([$id]);
     }
 }
