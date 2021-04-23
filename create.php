@@ -30,11 +30,11 @@
 
                 <div class="form-group">
                     <label for="contents">Contents</label>
-                    <textarea class="form-control" name="contents" id="contents" cols="30" rows="10" placeholder="contents"></textarea>
+                    <textarea class="form-control" name="contents" id="contents" cols="30" rows="10" placeholder="Contents"></textarea>
                 </div>
                 <div class="create-postbutton">
                 <!-- 戻るボタン -->
-                    <!-- <button type="button" onclick="history.back()">CANCEL</button> -->
+                    <button type="button" onclick="history.back()">CANCEL</button>
                 <!-- 送信ボタン -->
                     <button type="submit" class="post-btn">POST</button>
                 </div>
