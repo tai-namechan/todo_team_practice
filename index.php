@@ -19,16 +19,16 @@ $tasks = $taskall->getAll();
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
-   <header>
-   <a href="index.php" class="topsite">Team-A</a>
-   <a href="create.php" class= "create" >Create</a>
-   </header>
+<body class="index-body">
+   <div class="index-head">
+        <a href="index.php" class="index-topsite">Team-A</a>
+        <a href="create.php" class= "index-create" >Create</a>
+   </div>
 
    <div class="row">
    <?php foreach ($tasks as $task) : ?>
         <div class="card">
-        <!-- 画像入れたかったら入れる -->
+        <img src="./cardimage.jpg" alt="写真" class="index-img">
              <div class="card-body">
                  <h2 class="card-title type1"><?= $task["title"]; ?></h2>
                  <p class="card-text type1"><?= $task["contents"]; ?></p>

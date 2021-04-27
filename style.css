@@ -104,6 +104,58 @@ button:hover {
     background: #a19d99;
     color: white;
 }
+
 /* index ページ */
 
+.index-body{
+    font-family: 'Lato', sans-serif;
+    background: #e2dedb;
+    color: #332c24;
+}
 
+.index-head{
+    padding: 13px;
+    background-color: rgb(41, 39, 39);
+    display: flex;
+    justify-content: space-between;
+}
+
+.index-topsite{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+
+.index-create{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+
+.row {
+    display: flex;
+    padding: 50px;
+    margin: 50px;
+    justify-content: space-evenly;
+}
+
+.card {
+    border: 1px solid;
+    background-color: ivory;
+}
+
+img .index-img{
+    width: 300px;
+}
+
+.type1{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+.card-endtext {
+    font-family: 'Lato', sans-serif;
+    text-align: end;
+}
