@@ -3,7 +3,11 @@
 require_once('Models/Task.php');
 require_once('function.php');
 
+$taskall = new Task();
+$tasks = $taskall->getAll();
+
 ?>
+
 
 <!DOCTYPE html>
 <html lang="ja">
@@ -21,23 +25,24 @@ require_once('function.php');
    <a href="create.php" class= "create" >Create</a>
    </header>
 
-   <div class="card">
-   <!-- ここからforeach -->
-        <div class="card-image">
-     <!-- なにか画像入れたかったら入れる -->
-
+   <div class="row">
+   <?php foreach ($tasks as $task) : ?>
+        <div class="card">
+        <!-- 画像入れたかったら入れる -->
              <div class="card-body">
-                 <h2 class="card-title">データ読み込む</h2>
-                 <p class="card-text">データ読み込む</p>
+                 <h2 class="card-title type1"><?= $task["title"]; ?></h2>
+                 <p class="card-text type1"><?= $task["contents"]; ?></p>
 
-                 <!-- edit機能入れる -->
-
-
-                 <!-- delet機能入れる -->
-
-
+                 <div class="card-endtext">
+                 <a href="edit.php?id=<? echo $task['id']; ?>">EDIT</a>
+                 <form action="delete.php" method="POST">
+                     <input type="hidden" name="id" value="<? echo $task['id']; ?>">
+                     <button type="submit" class="text-detale">DETELE</button>
+                 </form>
+                 </div>
              </div>
         </div>
+   <?php endforeach; ?>
    </div>
 </body>
 </html>
