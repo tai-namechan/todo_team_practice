@@ -34,7 +34,7 @@ $tasks = $taskall->getAll();
                  <p class="card-text type1"><?= $task["contents"]; ?></p>
 
                  <div class="card-endtext">
-                 <a href="edit.php?id=<? echo $task['id']; ?>">EDIT</a>
+                 <a href="edit.php?id=<? echo $task['id']; ?>"><button type="submit" class="text-detale">EDIT</button></a>
                  <form action="delete.php" method="POST">
                      <input type="hidden" name="id" value="<? echo $task['id']; ?>">
                      <button type="submit" class="text-detale">DETELE</button>

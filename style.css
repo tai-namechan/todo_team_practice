@@ -139,6 +139,7 @@ button:hover {
     padding: 50px;
     margin: 50px;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -146,7 +147,7 @@ button:hover {
     background-color: ivory;
 }
 
-img .index-img{
+.index-img{
     width: 300px;
 }
 
