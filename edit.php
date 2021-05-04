@@ -19,7 +19,7 @@ $task = (new Task())->FindById($id);
     <title>編集 | Todoアプリ</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body class="create-body">
 <div class="create-head">
         <div class="create-head-left">
             <nav>
